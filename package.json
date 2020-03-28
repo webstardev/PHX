@@ -1,27 +1,44 @@
 {
-  "name": "PHX",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },  
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/whitebearcoder/PHX.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/whitebearcoder/PHX/issues"
-  },
-  "homepage": "https://github.com/whitebearcoder/PHX#readme",
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "next": "^9.3.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "aframe": "^1.0.4",
+    "bootstrap": "^4.4.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-burger-menu": "^2.6.12",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.13.1",
+    "react-feather": "^2.0.3",
+    "react-parallax-tilt": "^1.3.27",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "react-subscribe-card": "^2.1.0",
+    "styled-components": "^4.0.0",
+    "three": "0.115.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
