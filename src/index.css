@@ -20,9 +20,11 @@ a {
   padding: 0px 10px;
   transition: all 200ms ease 0s;
   font-weight: 600;
+  outline: none;
 }
+
 a:hover {
-  opacity: 0.8;
+  opacity: 0.8 !important;
 }
 
 code {

@@ -7,9 +7,7 @@ const Header = () => (
     <HeaderGroup>
       <div className="logo">
         <Link to="/">
-          <a>
-            <img src="/assets/logo.svg" alt="" aria-label="icon" width="40" />
-          </a>
+          <img src="/assets/logo.svg" alt="" aria-label="icon" width="40" />
         </Link>
       </div>
     </HeaderGroup>
@@ -18,12 +16,10 @@ const Header = () => (
         Tutorials
         <NewLinkText bg="#93CBE6">New</NewLinkText>
       </NewLink>
-      <Link to="/sandbox">
-        <NewLink>
-          Sandbox
-          <NewLinkText bg="#D0A5D3">Soon</NewLinkText>
-        </NewLink>
-      </Link>
+      <NewLink to="/sandbox">
+        Sandbox
+        <NewLinkText bg="#D0A5D3">Soon</NewLinkText>
+      </NewLink>
       <a href="https://curiee.com/about">About</a>
 
     </HeaderGroupLinks>
@@ -78,6 +74,7 @@ export const NewLink = styled(Link)`
 `;
 
 export const NewLinkText = styled.div`
+  display: inline-block;
   align-self: center;
   margin-bottom: 8px;
   padding: 1px 3px;

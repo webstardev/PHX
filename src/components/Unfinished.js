@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 export default props => (
   <div
@@ -53,8 +53,8 @@ export default props => (
           {(props.soon && "We're working on this page, stay tuned! ⚡️‍") ||
             "This page is unfinished, sorry!"}{" "}
           Go{" "}
-          <Link href="/">
-            <a style={{ textDecoration: "underline", color: "#000" }}>Home</a>
+          <Link to="/" style={{ textDecoration: "underline", color: "#000" }}>
+            Home
           </Link>
           .
         </h2>

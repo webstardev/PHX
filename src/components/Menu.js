@@ -61,20 +61,19 @@ const A = styled.a`
 
 export default () => (
   <Menu right styles={styles}>
-    <Link href="/tutorials">
-      <NewLink color="#fff">
-        Tutorials
-        <NewLinkText>New</NewLinkText>
-      </NewLink>
-    </Link>
-    <Link href="/sandbox">
-      <NewLink color="#fff">
-        Sandbox
-        <NewLinkText bg="#F49B0B">Soon</NewLinkText>
-      </NewLink>
-    </Link>
-    <Link href="https://curiee.com/about">
-      <A style={{ color: "white" }}>About</A>
-    </Link>
+
+    <NewLink to="/tutorials" color="#fff">
+      Tutorials
+      <NewLinkText>New</NewLinkText>
+    </NewLink>
+
+    <NewLink  to="/sandbox" color="#fff">
+      Sandbox
+      <NewLinkText bg="#F49B0B">Soon</NewLinkText>
+    </NewLink>
+
+    {/* <Link> */}
+      <A href="https://curiee.com/about" style={{ color: "white" }}>About</A>
+    {/* </Link> */}
   </Menu>
 );
