@@ -1,0 +1,27 @@
+{
+  "name": "PHX",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitebearcoder/PHX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whitebearcoder/PHX/issues"
+  },
+  "homepage": "https://github.com/whitebearcoder/PHX#readme",
+  "dependencies": {
+    "next": "^9.3.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
