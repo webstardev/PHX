@@ -15,19 +15,21 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path="/tutorials/hello">
-            <Hello />
-          </Route>
-          <Route path="/tutorials">
-            <Tutorials />
-          </Route>          
-          <Route path="/">
-            <Home />
-          </Route>    
+          <Route exact path="/" component={Home} />
+          <Route path="/tutorials" component={TutorialsRoute} />                      
         </Switch>
       </Router>
     </>
   );
+}
+
+function TutorialsRoute(props) {
+  return (
+    <>
+      <Route exact path={props.match.path} component={Tutorials} />
+      <Route path={`${props.match.path}/hello`} component={Hello} />      
+    </>
+  )
 }
 
 export default App;
