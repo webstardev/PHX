@@ -8,15 +8,19 @@ import {
 
 import Home from "./pages/Home";
 import Tutorials from "./pages/tutorials";
+import Hello from "./pages/tutorials/Hello";
 
 function App() {
   return (
     <>
       <Router>
         <Switch>
+          <Route path="/tutorials/hello">
+            <Hello />
+          </Route>
           <Route path="/tutorials">
             <Tutorials />
-          </Route>
+          </Route>          
           <Route path="/">
             <Home />
           </Route>    

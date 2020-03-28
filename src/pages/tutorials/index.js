@@ -15,22 +15,22 @@ export default () => (
         <h1>Tutorials</h1>
         <ol>
           <li>
-            <Link href="/tutorials/hello">
-              <a> Quantum Hello World 👾</a>
+            <Link to="/tutorials/hello">
+              Quantum Hello World 👾
             </Link>
           </li>
           <li>
-            <Link href="/tutorials/bloch">
-              <a> Bloch Sphere VR 🐣</a>
+            <Link to="/tutorials/bloch">
+              Bloch Sphere VR 🐣
             </Link>
           </li>
           <li>
-            <Link
+            <a
               href="https://medium.com/quantum-computing-for-the-utopian/a-simple-quantum-teleportation-exercise-with-googles-cirq-f5d93dadf307"
               target="_blank"
             >
-              <a>Quantum Teleportation in Google Cirq ⌛️</a>
-            </Link>
+              Quantum Teleportation in Google Cirq ⌛️
+            </a>
           </li>
         </ol>
       </section>
