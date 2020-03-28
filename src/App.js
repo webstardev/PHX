@@ -7,12 +7,16 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/Home";
+import Tutorials from "./pages/tutorials";
 
 function App() {
   return (
     <>
       <Router>
         <Switch>
+          <Route path="/tutorials">
+            <Tutorials />
+          </Route>
           <Route path="/">
             <Home />
           </Route>    

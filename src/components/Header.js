@@ -6,29 +6,26 @@ const Header = () => (
   <Wrapper>
     <HeaderGroup>
       <div className="logo">
-        <Link href="/">
+        <Link to="/">
           <a>
             <img src="/assets/logo.svg" alt="" aria-label="icon" width="40" />
           </a>
         </Link>
       </div>
     </HeaderGroup>
-    <HeaderGroupLinks>
-      <Link href="/tutorials">
-        <NewLink>
-          Tutorials
-          <NewLinkText bg="#93CBE6">New</NewLinkText>
-        </NewLink>
-      </Link>
-      <Link href="/sandbox">
+    <HeaderGroupLinks>      
+      <NewLink to="/tutorials">
+        Tutorials
+        <NewLinkText bg="#93CBE6">New</NewLinkText>
+      </NewLink>
+      <Link to="/sandbox">
         <NewLink>
           Sandbox
           <NewLinkText bg="#D0A5D3">Soon</NewLinkText>
         </NewLink>
       </Link>
-      <Link href="https://curiee.com/about">
-        <a>About</a>
-      </Link>
+      <a href="https://curiee.com/about">About</a>
+
     </HeaderGroupLinks>
   </Wrapper>
 );
@@ -58,7 +55,7 @@ const HeaderGroupLinks = styled(HeaderGroup)`
   }
 `;
 
-export const NewLink = styled.a`
+export const NewLink = styled(Link)`
   ursor: pointer;
   user-select: none;
   transition: background 120ms ease-in 0s;
