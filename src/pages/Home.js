@@ -30,28 +30,24 @@ const Home = () => (
         <h4>Recent Releases</h4>
         <FlexContainer>
           <div style={{ cursor: "pointer", maxWidth: "100%" }}>
-            <Link href="/tutorials/hello" as="/tutorials/hello">
-              <a>
-                <Tilt glareEnable={true} perspective={3000} tiltReverse={true}>
-                  <FlexCard>
-                    <h5>Hello Quantum World</h5>
-                    <img src="/assets/intro.png" />
-                  </FlexCard>
-                </Tilt>
-              </a>
+            <Link to="/tutorials/hello" as="/tutorials/hello">
+              <Tilt glareEnable={true} perspective={3000} tiltReverse={true}>
+                <FlexCard>
+                  <h5>Hello Quantum World</h5>
+                  <img src="/assets/intro.png" />
+                </FlexCard>
+              </Tilt>
             </Link>
           </div>
 
           <div style={{ cursor: "pointer", maxWidth: "100%" }}>
-            <Link href="/tutorials/bloch" as="/tutorials/bloch">
-              <a>
+            <Link to="/tutorials/bloch" as="/tutorials/bloch">
                 <Tilt glareEnable={true} perspective={3000} tiltReverse={true}>
                   <FlexCard>
                     <h5>Bloch Sphere VR</h5>
                     <img src="/assets/intro.png" />
                   </FlexCard>
                 </Tilt>
-              </a>
             </Link>
           </div>
           <div
@@ -60,20 +56,18 @@ const Home = () => (
               maxWidth: "100%",
               margin: "0 2rem"
             }}
-          >
-            <Link
+          >            
+            <a
               href="https://medium.com/quantum-computing-for-the-utopian/a-simple-quantum-teleportation-exercise-with-googles-cirq-f5d93dadf307"
               target="_blank"
             >
-              <a>
-                <Tilt glareEnable={true} tiltReverse={true}>
-                  <FlexCard>
-                    <h5>Quantum Teleportation in Cirq</h5>
-                    <img src="/assets/teleportation.png" />
-                  </FlexCard>
-                </Tilt>
-              </a>
-            </Link>
+              <Tilt glareEnable={true} tiltReverse={true}>
+                <FlexCard>
+                  <h5>Quantum Teleportation in Cirq</h5>
+                  <img src="/assets/teleportation.png" />
+                </FlexCard>
+              </Tilt>
+            </a>           
           </div>
         </FlexContainer>
       </Section1>

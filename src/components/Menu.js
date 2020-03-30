@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { bubble as Menu } from "react-burger-menu";
 import { NewLink, NewLinkText } from "./Header";
 
@@ -72,8 +71,6 @@ export default () => (
       <NewLinkText bg="#F49B0B">Soon</NewLinkText>
     </NewLink>
 
-    {/* <Link> */}
-      <A href="https://curiee.com/about" style={{ color: "white" }}>About</A>
-    {/* </Link> */}
+    <A href="https://curiee.com/about" style={{ color: "white" }}>About</A>
   </Menu>
 );
